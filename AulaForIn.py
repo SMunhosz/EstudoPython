@@ -18,5 +18,11 @@ for letra in texto:
 
 print()
 
-for numero in range(5, 10, 2):
+for numero in range(0, 100, 8):
     print(numero)
+
+print()
+
+for numero in range(100):
+    if numero % 8 == 0:     #Mesma coisa
+        print(numero)
