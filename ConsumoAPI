@@ -1,0 +1,26 @@
+import requests
+
+# Get
+requisicao = requests.get("https://estudoapi-9a24b-default-rtdb.firebaseio.com/.json")
+print(requisicao)
+print(requisicao.json())
+
+
+# Post
+informacoes = '{"Nome": "Nati"}'
+requisicao = requests.post("https://estudoapi-9a24b-default-rtdb.firebaseio.com/.json", data=informacoes)
+print(requisicao)
+print(requisicao.json())
+
+
+# Patch
+informacoes = '{"Nome": "Natieli"}'
+requisicao = requests.patch("https://estudoapi-9a24b-default-rtdb.firebaseio.com/-NCz4zktI06gi23q7qt6.json", data=informacoes)
+print(requisicao)
+print(requisicao.json())
+
+
+# Delete
+requisicao = requests.delete("https://estudoapi-9a24b-default-rtdb.firebaseio.com/-NCz4zktI06gi23q7qt6.json")
+print(requisicao)
+print(requisicao.json())
